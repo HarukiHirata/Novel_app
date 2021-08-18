@@ -1,0 +1,100 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#top-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100vw;
+}
+
+.title {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.top-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-btn {
+  width: 50vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.white {
+  color: white;
+}
+
+.white:hover {
+  color: white;
+}
+
+#register-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100vw;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logout-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100vw;
+}
+
+#admin-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100vw;
+}
+
+#topic-index-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100vw;
+}
+
+#topic-detail-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100vw;
+}
