@@ -26,7 +26,7 @@ class Topic extends Db {
 
   public function findTopic() {
     $sql = 'SELECT topics.id AS topic_id, users.name AS user_name, topics.user_id AS user_id, topics.title AS title, topics.body AS body FROM topics';
-    $sql .= ' INNER JOIN users ON topics.user_id = users.id WHERE topics.open_flg = 1 AND topics.del_flg = 0;';
+    $sql .= ' INNER JOIN users ON topics.user_id = users.id WHERE topics.open_flg = 1 AND topics.del_flg = 0 AND users.del_flg = 0;';
     $sth = $this->dbh->prepare($sql);
     $sth->execute();
     $result = $sth->fetchAll(PDO::FETCH_ASSOC);
