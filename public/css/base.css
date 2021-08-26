@@ -48,6 +48,18 @@ table {
   color: white;
 }
 
+.gold {
+  color: gold;
+}
+
+.silver {
+  color: silver;
+}
+
+.blonze {
+  color: chocolate;
+}
+
 .white:hover {
   color: white;
 }

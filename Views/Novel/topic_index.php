@@ -70,10 +70,12 @@ $params_comfavo = $comfavo->findcomfavo();
         }
         ?>
         <tr>
-          <?php if ($countfavobyuserid >= 5): ?>
-            <td><?=$topic['user_name'] ?>（名人）</td>
+          <?php if ($countfavobyuserid >= 10): ?>
+            <td style="background-color: gold"><?=$topic['user_name'] ?>（ゴールド）</td>
+          <?php elseif ($countfavobyuserid >= 5): ?>
+            <td style="background-color: silver"><?=$topic['user_name'] ?>（シルバー）</td>
           <?php else: ?>
-            <td><?=$topic['user_name'] ?> </td>
+            <td style="background-color: chocolate"><?=$topic['user_name'] ?>（ブロンズ）</td>
           <?php endif; ?>
           <td><?=$topic['title'] ?></td>
           <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] == $topic['user_id']): ?>

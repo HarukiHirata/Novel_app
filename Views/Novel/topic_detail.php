@@ -64,12 +64,15 @@ foreach ($params_comfavo['commentfavorites'] as $comfavorite) {
         <col style="width: 33.3%;">
       </colgroup>
       <tr>
-        <?php if ($countfavobyuserid >= 5): ?>
+        <?php if ($countfavobyuserid >= 10): ?>
           <td>投稿者</td>
-          <td colspan="2"><?=$params_det['topic']['user_name']; ?>（名人）</td>
+          <td colspan="2" style="background-color: gold"><?=$params_det['topic']['user_name']; ?>（ゴールド）</td>
+        <?php elseif ($countfavobyuserid >= 5): ?>
+          <td>投稿者</td>
+          <td colspan="2" style="background-color: silver"><?=$params_det['topic']['user_name']; ?> （シルバー）</td>
         <?php else: ?>
           <td>投稿者</td>
-          <td colspan="2"><?=$params_det['topic']['user_name']; ?> </td>
+          <td colspan="2" style="background-color: chocolate"><?=$params_det['topic']['user_name']; ?> （ブロンズ）</td>
         <?php endif; ?>
       </tr>
       <tr>

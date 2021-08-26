@@ -49,10 +49,12 @@ foreach ($params_comfavo['commentfavorites'] as $comfavo) {
     <div class="title">
       <h1><?php echo $_SESSION['name'] ?>さんのマイページ</h1>
     </div>
-    <?php if ($countfavobyuserid >= 5): ?>
-      <h2>称号：名人</h2>
+    <?php if ($countfavobyuserid >= 10): ?>
+      <h2>称号：<span class="gold">ゴールド</span></h2>
+    <?php elseif ($countfavobyuserid >= 5): ?>
+      <h2>称号：<span class="silver">シルバー</span></h2>
     <?php else: ?>
-      <h2>称号：なし</h2>
+      <h2>称号：<span class="blonze">ブロンズ</span></h2>
     <?php endif; ?>
     <table class="table table-bordered" style="width: 80vw">
       <colgroup>

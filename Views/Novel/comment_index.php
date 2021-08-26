@@ -87,10 +87,12 @@ $params_comfavo = $comfavo->findcomfavo();
         ?>
         <tr>
           <?php if ($comment['category'] == '結末'): ?>
-            <?php if ($countfavobyuserid >= 5): ?>
-              <td colspan="2"><?=$comment['user_name'] ?> （名人）</td>
+            <?php if ($countfavobyuserid >= 10): ?>
+              <td colspan="2" style="background-color: gold"><?=$comment['user_name'] ?>（ゴールド）</td>
+            <?php elseif ($countfavobyuserid >= 5): ?>
+              <td colspan="2" style="background-color: silver"><?=$comment['user_name'] ?>（シルバー）</td>
             <?php else: ?>
-              <td colspan="2"><?=$comment['user_name'] ?> </td>
+              <td colspan="2" style="background-color: chocolate"><?=$comment['user_name'] ?> （ブロンズ）</td>
             <?php endif; ?>
             <td colspan="4"><?=$comment['body'] ?></td>
             <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] == $comment['user_id']): ?>
@@ -146,10 +148,12 @@ $params_comfavo = $comfavo->findcomfavo();
         ?>
         <tr>
           <?php if ($comment['category'] == 'その他'): ?>
-            <?php if ($countfavobyuserid >= 5): ?>
-              <td colspan="2"><?=$comment['user_name'] ?> （名人）</td>
+            <?php if ($countfavobyuserid >= 10): ?>
+              <td colspan="2" style="background-color: gold"><?=$comment['user_name'] ?>（ゴールド）</td>
+            <?php elseif ($countfavobyuserid >= 5): ?>
+              <td colspan="2" style="background-color: silver"><?=$comment['user_name'] ?>（シルバー）</td>
             <?php else: ?>
-              <td colspan="2"><?=$comment['user_name'] ?> </td>
+              <td colspan="2" style="background-color: chocolate"><?=$comment['user_name'] ?> （ブロンズ）</td>
             <?php endif; ?>
             <td colspan="4"><?=$comment['body'] ?></td>
             <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] == $comment['user_id']): ?>
